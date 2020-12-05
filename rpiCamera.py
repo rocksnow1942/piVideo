@@ -79,6 +79,7 @@ def main():
         camera.iso=1600
         print('iso = ',camera.iso)
         print('shutter speed = ',camera.shutter_speed)
+        print('exposure speed = ',camera.exposure_speed)
         output = StreamingOutput()
         #Uncomment the next line to change your Pi's Camera rotation (in degrees)
         #camera.rotation = 90
