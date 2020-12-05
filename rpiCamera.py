@@ -74,11 +74,11 @@ class StreamingServer(socketserver.ThreadingMixIn, server.HTTPServer):
     daemon_threads = True
 
 def main():
-    with picamera.PiCamera(resolution='640x480', framerate=24) as camera:
+    with picamera.PiCamera(resolution='640x480', framerate=12) as camera:
         
         camera.iso=1600
         print('iso = ',camera.iso)
-        camera.shutter_speed = 1000//25
+        camera.shutter_speed = 1000//13
         print('shutter speed = ',camera.shutter_speed)
         print('exposure speed = ',camera.exposure_speed)
         output = StreamingOutput()
