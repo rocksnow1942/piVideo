@@ -80,7 +80,7 @@ def main():
         #camera.rotation = 90
         camera.start_recording(output, format='mjpeg')
         try:
-            address = ('', 8000)
+            address = ('', 80)
             server = StreamingServer(address, handler(output))
             server.serve_forever()
         finally:
