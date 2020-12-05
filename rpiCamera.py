@@ -78,6 +78,7 @@ def main():
         
         camera.iso=1600
         print('iso = ',camera.iso)
+        camera.shutter_speed = 1000//25
         print('shutter speed = ',camera.shutter_speed)
         print('exposure speed = ',camera.exposure_speed)
         output = StreamingOutput()
